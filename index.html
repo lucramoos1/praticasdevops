@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFlow | Soluções de TI Profissionais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header>
+        <div class="header-container">
+            <a href="#hero" class="logo">Tech<span>Flow</span></a>
+            
+            <nav>
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" title="Alternar tema">🌙</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Mobile (oculto) -->
+    <nav id="mobileMenu" style="display: none; position: fixed; top: 70px; left: 0; right: 0; background-color: var(--dark-card); z-index: 99; border-bottom: 1px solid var(--dark-border);">
+        <a href="#services" class="nav-link" style="display: block; padding: 1rem 2rem; border-bottom: 1px solid var(--dark-border);">Serviços</a>
+        <a href="#about" class="nav-link" style="display: block; padding: 1rem 2rem; border-bottom: 1px solid var(--dark-border);">Sobre</a>
+        <a href="#faq" class="nav-link" style="display: block; padding: 1rem 2rem; border-bottom: 1px solid var(--dark-border);">FAQ</a>
+        <a href="#contact" class="nav-link" style="display: block; padding: 1rem 2rem;">Contato</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-content">
+        <div class="container">
+            <h1 class="fade-in-up">Soluções de TI que Transformam Negócios</h1>
+            <p class="fade-in-up" style="animation-delay: 0.1s;">Desenvolvemos tecnologias inovadoras para impulsionar sua empresa no mercado digital</p>
+            <div style="animation: fadeInUp 0.6s ease-out 0.2s both;">
+                <a href="#contact" class="cta-button">Solicite um Orçamento</a>
+                <a href="#services" class="cta-button secondary" style="margin-left: 1rem;">Conheça Nossos Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <p class="section-subtitle">Soluções completas de TI para empresas de todos os portes</p>
+            <div class="section-divider"></div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">💻</div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criamos sites e aplicações web modernas, responsivas e otimizadas para conversão. Utilizamos as tecnologias mais atuais do mercado.</p>
+                </div>
+                
+                <div class="service-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="service-icon">📱</div>
+                    <h3>Aplicativos Móveis</h3>
+                    <p>Desenvolvemos aplicativos nativos e híbridos para iOS e Android. Soluções escaláveis e com excelente experiência do usuário.</p>
+                </div>
+                
+                <div class="service-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="service-icon">🔒</div>
+                    <h3>Consultoria em Segurança</h3>
+                    <p>Auditoria de segurança, implementação de protocolos de proteção e conformidade com LGPD. Protegemos seus dados e os de seus clientes.</p>
+                </div>
+
+                <div class="service-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Suporte Técnico 24/7</h3>
+                    <p>Monitoramento contínuo, manutenção preventiva e suporte técnico especializado. Sua infraestrutura sempre funcionando perfeitamente.</p>
+                </div>
+
+                <div class="service-card fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="service-icon">☁️</div>
+                    <h3>Soluções em Cloud</h3>
+                    <p>Migração para cloud, infraestrutura gerenciada e backup automático. Escalabilidade e redundância para sua paz de espírito.</p>
+                </div>
+
+                <div class="service-card fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="service-icon">📊</div>
+                    <h3>Business Intelligence</h3>
+                    <p>Transformamos dados em insights valiosos. Dashboards inteligentes e relatórios automatizados para melhor tomada de decisão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about">
+        <div class="container">
+            <h2>Sobre a TechFlow</h2>
+            <p class="section-subtitle">Inovação e excelência em tecnologia desde 2015</p>
+            <div class="section-divider"></div>
+
+            <div class="about-content fade-in-up">
+                <div class="about-text">
+                    <h3>Quem Somos</h3>
+                    <p>A TechFlow é uma empresa especializada em soluções de Tecnologia da Informação. Com mais de 8 anos de experiência, ajudamos empresas a transformarem seus processos através da tecnologia.</p>
+                    
+                    <h3 style="margin-top: 2rem;">Nossa Missão</h3>
+                    <p>Fornecer soluções tecnológicas inovadoras que impulsionam o crescimento e eficiência dos negócios de nossos clientes.</p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>100+ Projetos Entregues</h4>
+                                <p>Clientes satisfeitos em diversos segmentos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Equipe de Especialistas</h4>
+                                <p>Profissionais certificados em tecnologias líderes</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Atendimento Personalizado</h4>
+                                <p>Soluções adaptadas às suas necessidades</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image" style="animation: fadeInUp 0.6s ease-out 0.1s both;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🚀</div>
+                        <p style="font-size: 1.2rem; font-weight: 600;">Transformando Ideias em Realidade</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção FAQ -->
+    <section id="faq">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <p class="section-subtitle">Tire suas dúvidas sobre nossos serviços</p>
+            <div class="section-divider"></div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Qual é o tempo médio de desenvolvimento de um projeto?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        O tempo varia de acordo com a complexidade do projeto. Em média, um website leva de 4 a 8 semanas, enquanto aplicações mais complexas podem levar 3 a 6 meses. Realizamos um cronograma detalhado antes de iniciar qualquer trabalho.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Vocês oferecem suporte após a entrega?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! Oferecemos pacotes de suporte que incluem manutenção preventiva, correção de bugs, atualizações e monitoramento 24/7. Você pode escolher o plano que melhor se adequa às suas necessidades.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Como funciona o processo de orçamento?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Começamos com uma reunião de descoberta para entender seus objetivos. Em seguida, nossa equipe analisa os requisitos e prepara uma proposta detalhada com timeline, custos e escopo. Você pode revisar e discutir antes de confirmarmos o início.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quais tecnologias vocês utilizam?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Utilizamos tecnologias atuais e confiáveis: React, Vue.js e Angular para frontend; Node.js, Python e C# para backend; PostgreSQL e MongoDB para bancos de dados; e AWS, Google Cloud e Azure para infraestrutura. Escolhemos a melhor stack para cada projeto.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Vocês trabalham com empresas pequenas?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutamente! Trabalhamos com empresas de todos os tamanhos, desde startups até grandes corporações. Temos soluções flexíveis e escaláveis para atender diferentes orçamentos e necessidades.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact">
+        <div class="container">
+            <h2>Solicite um Orçamento</h2>
+            <p class="section-subtitle">Entre em contato conosco para discutir seu projeto</p>
+            <div class="section-divider"></div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    <span class="error-message">Por favor, informe seu nome</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@empresa.com" required>
+                    <span class="error-message">Por favor, informe um e-mail válido</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="subject" placeholder="Qual é sua necessidade?" required>
+                    <span class="error-message">Por favor, informe o assunto</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" placeholder="Descreva seu projeto e objetivos..." required></textarea>
+                    <span class="error-message">Por favor, informe uma mensagem</span>
+                </div>
+
+                <button type="submit" class="form-submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TechFlow Soluções</h3>
+                <p>Transformando negócios através da tecnologia e inovação.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn">in</a>
+                    <a href="https://facebook.com" target="_blank" class="social-link" title="Facebook">f</a>
+                    <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">📷</a>
+                    <a href="https://github.com" target="_blank" class="social-link" title="GitHub">⚙️</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Navegação</h3>
+                <a href="#services">Serviços</a><br>
+                <a href="#about">Sobre</a><br>
+                <a href="#faq">FAQ</a><br>
+                <a href="#contact">Contato</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <a href="mailto:contato@techflow.com">contato@techflow.com</a><br>
+                <a href="tel:+5511987654321">(11) 98765-4321</a><br>
+                São Paulo, SP
+            </div>
+
+            <div class="footer-section">
+                <h3>Horário</h3>
+                <p>Seg - Sex: 9h às 18h<br>
+                Sábado: 9h às 13h<br>
+                Domingo: Fechado</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 TechFlow Soluções. Todos os direitos reservados. | <a href="#">Política de Privacidade</a></p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5511987654321" class="whatsapp-button" target="_blank" title="Chat com WhatsApp">💬</a>
+
+    <!-- Script -->
+    <script src="main.js"></script>
+</body>
+</html>
